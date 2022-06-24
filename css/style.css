@@ -294,3 +294,59 @@ ul,ol{
 }
 
 /*---CARRUSEL 1----*/
+
+/*----QUE HACEMOS----*/
+
+.que-hacemos-container{
+ display: flex;
+ margin-left: 12.5rem;
+ margin-top: 3.125rem;
+ align-items: center;
+}
+
+.que-hacemos-tex{
+  margin-left: 3.125rem;
+}
+.que-hacemos-tex p{
+  margin-top: 1.25rem;
+  margin-right: 15.62rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 900px){
+  .que-hacemos-tex p{
+    margin-right: 1.875rem;
+  }
+  .que-hacemos-container{
+    margin-left: 100px;
+  }
+
+}
+
+@media (max-width: 730px){
+  .que-hacemos-container{
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 630px){
+  .que-hacemos-container{
+    flex-direction: column;
+    margin-left:0;
+    text-align: center;
+  }
+  .que-hacemos-tex{
+    margin-left: 0;
+  }
+  .que-hacemos-tex p{
+    margin-right: 0;
+    padding: 0 25px ;
+  }
+
+  
+
+  
+  
+}
+
+/*----FIN QUE HACEMOS----*/
