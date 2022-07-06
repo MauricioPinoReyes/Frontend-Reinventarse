@@ -542,6 +542,7 @@ ul {
   border: none;
   font-weight: 700;
   font-size: 1.2rem;
+  color: #fff;
 }
 
 @media (max-width: 630px) {
@@ -588,7 +589,7 @@ ul {
   cursor: pointer;
   transition: all 1500ms ease;
   position: relative;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
 }
 
 .box:hover{
@@ -666,7 +667,7 @@ ul {
 .modal {
   /*display: flex;
   flex-direction: column;*/
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255,0.8);
   width: 100%;
   padding: 1.875rem 1.875rem;
   border-radius: 0.312rem;
@@ -765,6 +766,92 @@ ul {
   color: rgb(0 101 163);
 
 }
+
+/*--SLIDER 4--*/
+
+.container-slider4{
+    
+  height: 28.87rem;
+  background-color: rgb(34 35 36 / 90%);
+}
+
+
+.container-slider4 img{
+  width: 100%; 
+}
+
+.container-slider4 h1{
+  font-size: 1.87rem;
+  font-weight: 500;
+  text-align: center;
+  position:relative;
+  padding-top: 40px;
+  margin-bottom: 3.75rem;
+  color: #ffffff;
+}
+
+.container-slider4 h1:after{
+  content: '';
+  position: absolute;
+  width: 13.75rem;
+  height: 0.25rem;
+  background-color: rgb(234, 103, 42);
+  bottom: -1.25rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.slider4{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.slider4 .item{
+  border-radius: 0.5rem;
+}
+
+.slider4 .slick-slide{
+  margin:0.93rem;
+}
+
+.slick-dots li.slick-active button:before{
+  color:rgb(234, 103, 42);
+}
+
+.sliick-dots li button:before{
+  font-size: 0.75rem;
+}
+
+.slick-next:before,
+.slick-prev:before{
+  color: rgb(234, 103, 42);
+  font-size: 1.5rem;
+}
+
+.slider4 .item:hover{
+  display: block;
+  transition: all ease 0.3s;
+  transform: scale(1.1) translateY(-5px);
+}
+
+@media (max-width: 630px) {
+  .container-slider4{
+      height: 23.75rem;
+  } 
+}
+
+@media (max-width: 480px) {
+  .container-slider4{
+      height: 26.25rem;
+  } 
+}
+
+
+
+
+/*--FIN SLIDER 4--*/
 
 
 /*---ANIMACIONES----*/

@@ -136,10 +136,58 @@ $(document).ready(function () {
 		$('.slider2 .slider li').hide(); // Ocultamos todos los slides dos
 		$('.slider2 .slider li:nth-child(' + imgPosDos + ')').fadeIn(); // Mostramos el SlideDos seleccionado
 	}
+	/*--FIN CARRUSEL 2 */
 
+	/*--CARRUSEL 4--*/
+	$('.slider4').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		/*dots: true,*/
+		arrows: true,
+		autoplayspeed: 2000,
+		infiniite: true,
+		autoplay: true,
+	
+		responsive: [
+	{
+	  breakpoint: 1024,
+	  settings: {
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		infinite: true,
+		/*dots: true*/
+	  }
+	},
+	{
+	  breakpoint: 630,
+	  settings: {
+		slidesToShow: 2,
+		slidesToScroll: 2
+	  }
+	},
+	{
+	  breakpoint: 480,
+	  settings: {
+		slidesToShow: 2,
+		slidesToScroll: 1
+	  }
+	}
+	// You can unslick at a given breakpoint now by adding:
+	// settings: "unslick"
+	// instead of a settings object
+	]
+	
+	});
+	
+	/*-FIN SLIDER 4--*/
 });
 
-/*--FIN CARRUSEL 2 */
+
+
+
+
+
+
 
 /*--PROGRAMAS--*/
 
@@ -240,6 +288,11 @@ open7.addEventListener('click', () => {
 close7.addEventListener('click', () => {
   modal_container7.classList.remove('show');
 });
+
+
+/*-SLIDER 4--*/
+
+
 
 
 /*--ANIMACIONES--*/
