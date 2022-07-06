@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /*
@@ -346,6 +345,13 @@ ul {
   align-items: center;
 }
 
+.que-hacemos-container img{
+    filter: invert(27%) 
+    sepia(97%) saturate(920%) 
+    hue-rotate(173deg) brightness(97%) 
+    contrast(106%);
+}
+
 
 
 .que-hacemos-tex {
@@ -663,7 +669,8 @@ ul {
   padding: 0.31rem;
   border-radius: 0.31rem;
   border: none;
-  background-color:rgb(234, 103, 42);
+  /*background-color:rgb(234, 103, 42);*/
+  background-color: #ea672a;
   color: rgb(216, 205, 201);
   font-weight: 800;
 }
@@ -695,4 +702,33 @@ ul {
   padding-top: 50px;
   color: rgb(0 101 163);
 
+}
+
+
+/*---ANIMACIONES----*/
+
+/*--que hacemos--*/
+
+.animacion{
+  opacity: 0;
+  transition: all 2s;
+}
+
+.animacion2{
+  opacity: 0;
+  transition: all 2s;
+}
+
+
+.animacionRight {
+  animation: animacionRight 2s;
+}
+
+@keyframes animacionRight{
+  0%{
+      transform: translateX(-60px);
+  }
+  100%{
+      transform: translateX(0);
+  }
 }

@@ -91,6 +91,19 @@ $(document).ready(function () {
 
 	/*--FIN CARRUSEL 1 */
 
+	/*--ANIMACION QUE HACEMOS---*/
+
+
+
+
+
+
+	/*--FIN ANIMACION QUE HACEMOS---*/
+
+
+
+
+
 	/*--CARRUSEL 2 */
 
 	var imgItemsDos = $('.slider2 .slider li').length; // Numero de Slides
@@ -228,3 +241,37 @@ close7.addEventListener('click', () => {
   modal_container7.classList.remove('show');
 });
 
+
+/*--ANIMACIONES--*/
+
+/*que hacemos*/
+
+let animacion = document.querySelectorAll(".animacion");
+
+function mostrarScroll(){
+    let scrollTop = document.documentElement.scrollTop;
+    for (var i=0; i < animacion.length; i++){
+        let alturaAnimacion = animacion[i].offsetTop;
+        if(alturaAnimacion - 800 < scrollTop){
+            animacion[i].style.opacity = 1;
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarScroll);
+
+
+let animacion2 = document.querySelectorAll(".animacion2");
+
+function mostrarScrollDerecha(){
+    let scrollTop = document.documentElement.scrollTop;
+    for (var i=0; i < animacion2.length; i++){
+        let alturaAnimacion = animacion2[i].offsetTop;
+        if(alturaAnimacion - 800 < scrollTop){
+            animacion2[i].style.opacity = 1;
+            animacion2[i].classList.add("animacionRight");
+        }
+    }
+}
+
+window.addEventListener('scroll', mostrarScrollDerecha);
