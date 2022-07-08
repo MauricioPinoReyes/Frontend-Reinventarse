@@ -82,7 +82,7 @@ header {
 
 header.down {
   
-  background: rgba(255, 255, 255,0.8);
+  /*background: rgba(255, 255, 255,0.8);*/
   padding: 0.93rem 1.25rem;
 }
 
@@ -667,7 +667,7 @@ ul {
 .modal {
   /*display: flex;
   flex-direction: column;*/
-  background-color: rgba(255, 255, 255,0.8);
+  background-color: rgba(255, 255, 255);
   width: 100%;
   padding: 1.875rem 1.875rem;
   border-radius: 0.312rem;
@@ -775,9 +775,18 @@ ul {
   background-color: rgb(34 35 36 / 90%);
 }
 
+.slider4 .item{
+  border-radius: 0.5rem;
+}
+
 
 .container-slider4 img{
-  width: 100%; 
+  width: 100%;
+ /* width: 225px;*/
+  /*height: 100%;*/
+  /*width: 14.06em;
+  height: 14.06em;*/
+  /*object-fit: cover;*/
 }
 
 .container-slider4 h1{
@@ -808,9 +817,7 @@ ul {
   padding-bottom: 30px;
 }
 
-.slider4 .item{
-  border-radius: 0.5rem;
-}
+
 
 .slider4 .slick-slide{
   margin:0.93rem;
@@ -853,10 +860,97 @@ ul {
 
 /*--FIN SLIDER 4--*/
 
+/*FOOTER*/
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(234, 103, 42);
+	padding: 40px 30px;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer .contacto{
+	margin-right: 20px;
+	width: 40%;
+}
+
+footer .contacto ul li{
+	color: #fff;
+	margin-top: 10px;
+}
+
+
+
+
+footer .contacto img{
+	width: 15px;
+	filter: invert(100%) sepia(7%)
+	 saturate(1%) hue-rotate(147deg)
+	  brightness(108%) contrast(100%);
+}
+
+footer .contacto span{
+	margin-left: 10px;
+}
+
+footer .menu{
+	width: 30%;
+}
+footer ul li{
+	margin-bottom: 15px;
+} 
+
+footer .menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	/*margin-bottom: 30px;*/
+}
+
+footer .donar {
+	background: rgb(34 35 36 / 90%);
+	border-radius: 1.25rem;
+	padding: 0.625rem !important;
+  }
+
+footer .link a{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+footer .link .logo{
+	border-radius: 10px;
+	width: 200px;
+}
+
+@media (max-width: 630px) {
+	footer{
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .contacto,
+	footer .menu,
+	footer .link{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+  
+  }
+
+
+
+/* FIN FOOTER*/
+
+
+
+
 
 /*---ANIMACIONES----*/
-
-/*--que hacemos--*/
 
 .animacion{
   opacity: 0;
@@ -881,3 +975,5 @@ ul {
       transform: translateX(0);
   }
 }
+
+/*---FIN ANIMACIONES----*/
